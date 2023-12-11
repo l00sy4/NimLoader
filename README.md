@@ -1,7 +1,11 @@
 # NimLoader
 
-A shellcode loader that injects into a process of your choice. It uses NTAPI for everything besides getting the PID of the process specified by the user. I decided `NtQuerySystemInformation` was too tedious to implement in Nim.
+A shellcode loader that injects into a process of your choice. It uses NTAPI for everything besides getting the PID of the process specified by the user. 
 
 ### Usage
 
 `.\loader.exe notepad`
+
+### To-do
+
+- Use `NtQuerySystemInformation` for process enumeration. This is quite tedious, but I will implement it when I have more free time.
