@@ -4,6 +4,8 @@ A shellcode loader that injects into a process of your choice. It uses NTAPI for
 
 ### Usage
 
+Copy your payload into the shellcode array, change the size appropriately and compile it. Afterwards, 
+
 `.\loader.exe notepad`
 
 ### To-do
