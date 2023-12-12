@@ -178,7 +178,7 @@ proc injectRemoteProcess[I, T](shellcode: var array[I, T]): void =
 
 
 when defined(windows):
-    var shellcode: array[324, byte] = [
+    var shellcode: array[#size here, byte] = [
 
         # Payload here
     ]
